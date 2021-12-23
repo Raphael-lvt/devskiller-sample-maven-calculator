@@ -7,6 +7,9 @@
     <groupId>com.devskiller.sample</groupId>
     <artifactId>java-calculator</artifactId>
     <version>1.0.0</version>
+    <packaging>war</packaging>
+  <name>java-calculator</name>
+  <description>java-calculator.</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,6 +42,10 @@
                     <release>11</release>
                 </configuration>
             </plugin>
+                       <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+      </plugin>
         </plugins>
     </build>
 </project>
